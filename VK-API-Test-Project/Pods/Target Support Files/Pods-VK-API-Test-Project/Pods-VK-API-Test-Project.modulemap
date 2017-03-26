@@ -1,0 +1,6 @@
+framework module Pods_VK_API_Test_Project {
+  umbrella header "Pods-VK-API-Test-Project-umbrella.h"
+
+  export *
+  module * { export * }
+}
