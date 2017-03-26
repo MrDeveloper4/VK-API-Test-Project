@@ -6,5 +6,7 @@ target 'VK-API-Test-Project' do
   use_frameworks!
 
   # Pods for VK-API-Test-Project
+  pod 'SwiftyVK', :git => 'https://github.com/WE-St0r/SwiftyVK.git'
+  pod 'MBProgressHUD', '~> 1.0.0'
 
 end

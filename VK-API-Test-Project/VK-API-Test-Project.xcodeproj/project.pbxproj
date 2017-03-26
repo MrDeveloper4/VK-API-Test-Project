@@ -8,23 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		48F576CF1E87BC4A00AB991E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576CE1E87BC4A00AB991E /* AppDelegate.swift */; };
-		48F576D11E87BC4A00AB991E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576D01E87BC4A00AB991E /* ViewController.swift */; };
 		48F576D41E87BC4A00AB991E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F576D21E87BC4A00AB991E /* Main.storyboard */; };
 		48F576D71E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F576D51E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodeld */; };
 		48F576D91E87BC4A00AB991E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F576D81E87BC4A00AB991E /* Assets.xcassets */; };
 		48F576DC1E87BC4A00AB991E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F576DA1E87BC4A00AB991E /* LaunchScreen.storyboard */; };
+		48F576E41E87C5A500AB991E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576E31E87C5A500AB991E /* LoginViewController.swift */; };
+		48F576E61E87C5B100AB991E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576E51E87C5B100AB991E /* ProfileViewController.swift */; };
 		D638427D03D47BF0D7BB0FED /* Pods_VK_API_Test_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0225A681BAD197F01207B3 /* Pods_VK_API_Test_Project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48F576CB1E87BC4A00AB991E /* VK-API-Test-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK-API-Test-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F576CE1E87BC4A00AB991E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48F576D01E87BC4A00AB991E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48F576D31E87BC4A00AB991E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48F576D61E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VK_API_Test_Project.xcdatamodel; sourceTree = "<group>"; };
 		48F576D81E87BC4A00AB991E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48F576DB1E87BC4A00AB991E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48F576DD1E87BC4A00AB991E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F576E31E87C5A500AB991E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		48F576E51E87C5B100AB991E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C68E6636F29D4DE44F74CB1F /* Pods-VK-API-Test-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API-Test-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-VK-API-Test-Project/Pods-VK-API-Test-Project.release.xcconfig"; sourceTree = "<group>"; };
 		DA0225A681BAD197F01207B3 /* Pods_VK_API_Test_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_API_Test_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49F7EB0552373CE9579B8DC /* Pods-VK-API-Test-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API-Test-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VK-API-Test-Project/Pods-VK-API-Test-Project.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				48F576CC1E87BC4A00AB991E /* Products */,
 				866B9AC863009B320A2DFACA /* Pods */,
 				19378DE707859B8663C7DB04 /* Frameworks */,
+				48F576D51E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodeld */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,12 +75,12 @@
 			isa = PBXGroup;
 			children = (
 				48F576CE1E87BC4A00AB991E /* AppDelegate.swift */,
-				48F576D01E87BC4A00AB991E /* ViewController.swift */,
 				48F576D21E87BC4A00AB991E /* Main.storyboard */,
+				48F576E31E87C5A500AB991E /* LoginViewController.swift */,
+				48F576E51E87C5B100AB991E /* ProfileViewController.swift */,
 				48F576D81E87BC4A00AB991E /* Assets.xcassets */,
-				48F576DA1E87BC4A00AB991E /* LaunchScreen.storyboard */,
 				48F576DD1E87BC4A00AB991E /* Info.plist */,
-				48F576D51E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodeld */,
+				48F576DA1E87BC4A00AB991E /* LaunchScreen.storyboard */,
 			);
 			path = "VK-API-Test-Project";
 			sourceTree = "<group>";
@@ -215,8 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48F576D11E87BC4A00AB991E /* ViewController.swift in Sources */,
+				48F576E41E87C5A500AB991E /* LoginViewController.swift in Sources */,
 				48F576CF1E87BC4A00AB991E /* AppDelegate.swift in Sources */,
+				48F576E61E87C5B100AB991E /* ProfileViewController.swift in Sources */,
 				48F576D71E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +387,7 @@
 				48F576E21E87BC4A00AB991E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -393,7 +398,8 @@
 				48F576D61E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodel */,
 			);
 			currentVersion = 48F576D61E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodel */;
-			path = VK_API_Test_Project.xcdatamodeld;
+			name = VK_API_Test_Project.xcdatamodeld;
+			path = "VK-API-Test-Project/VK_API_Test_Project.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
