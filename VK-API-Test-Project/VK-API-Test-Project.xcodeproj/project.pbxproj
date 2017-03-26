@@ -15,8 +15,9 @@
 		48F576E41E87C5A500AB991E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576E31E87C5A500AB991E /* LoginViewController.swift */; };
 		48F576E61E87C5B100AB991E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576E51E87C5B100AB991E /* ProfileViewController.swift */; };
 		48F576EA1E87CADC00AB991E /* VkApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576E91E87CADC00AB991E /* VkApiManager.swift */; };
-		48F576EC1E87CD1900AB991E /* VkSignInHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576EB1E87CD1900AB991E /* VkSignInHandler.swift */; };
 		48F576EE1E87DA2D00AB991E /* AlertsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576ED1E87DA2D00AB991E /* AlertsManager.swift */; };
+		48F576F01E87DFF300AB991E /* VkSigningHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576EF1E87DFF300AB991E /* VkSigningHandler.swift */; };
+		48F576F21E87E50000AB991E /* UIView+BlockUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576F11E87E50000AB991E /* UIView+BlockUI.swift */; };
 		D638427D03D47BF0D7BB0FED /* Pods_VK_API_Test_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0225A681BAD197F01207B3 /* Pods_VK_API_Test_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +32,9 @@
 		48F576E31E87C5A500AB991E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		48F576E51E87C5B100AB991E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		48F576E91E87CADC00AB991E /* VkApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VkApiManager.swift; sourceTree = "<group>"; };
-		48F576EB1E87CD1900AB991E /* VkSignInHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VkSignInHandler.swift; sourceTree = "<group>"; };
 		48F576ED1E87DA2D00AB991E /* AlertsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsManager.swift; sourceTree = "<group>"; };
+		48F576EF1E87DFF300AB991E /* VkSigningHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VkSigningHandler.swift; sourceTree = "<group>"; };
+		48F576F11E87E50000AB991E /* UIView+BlockUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BlockUI.swift"; sourceTree = "<group>"; };
 		C68E6636F29D4DE44F74CB1F /* Pods-VK-API-Test-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API-Test-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-VK-API-Test-Project/Pods-VK-API-Test-Project.release.xcconfig"; sourceTree = "<group>"; };
 		DA0225A681BAD197F01207B3 /* Pods_VK_API_Test_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_API_Test_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49F7EB0552373CE9579B8DC /* Pods-VK-API-Test-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API-Test-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VK-API-Test-Project/Pods-VK-API-Test-Project.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,8 +87,9 @@
 				48F576E31E87C5A500AB991E /* LoginViewController.swift */,
 				48F576E51E87C5B100AB991E /* ProfileViewController.swift */,
 				48F576E91E87CADC00AB991E /* VkApiManager.swift */,
-				48F576EB1E87CD1900AB991E /* VkSignInHandler.swift */,
+				48F576EF1E87DFF300AB991E /* VkSigningHandler.swift */,
 				48F576ED1E87DA2D00AB991E /* AlertsManager.swift */,
+				48F576F11E87E50000AB991E /* UIView+BlockUI.swift */,
 				48F576D81E87BC4A00AB991E /* Assets.xcassets */,
 				48F576DD1E87BC4A00AB991E /* Info.plist */,
 				48F576DA1E87BC4A00AB991E /* LaunchScreen.storyboard */,
@@ -138,7 +141,7 @@
 				TargetAttributes = {
 					48F576CA1E87BC4A00AB991E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 5GRA9Q59XL;
+						DevelopmentTeam = P9QAW5XHCR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -228,12 +231,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F576EA1E87CADC00AB991E /* VkApiManager.swift in Sources */,
+				48F576F01E87DFF300AB991E /* VkSigningHandler.swift in Sources */,
 				48F576E41E87C5A500AB991E /* LoginViewController.swift in Sources */,
 				48F576CF1E87BC4A00AB991E /* AppDelegate.swift in Sources */,
+				48F576F21E87E50000AB991E /* UIView+BlockUI.swift in Sources */,
 				48F576E61E87C5B100AB991E /* ProfileViewController.swift in Sources */,
 				48F576EE1E87DA2D00AB991E /* AlertsManager.swift in Sources */,
 				48F576D71E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodeld in Sources */,
-				48F576EC1E87CD1900AB991E /* VkSignInHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +361,7 @@
 			baseConfigurationReference = F49F7EB0552373CE9579B8DC /* Pods-VK-API-Test-Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5GRA9Q59XL;
+				DEVELOPMENT_TEAM = P9QAW5XHCR;
 				INFOPLIST_FILE = "VK-API-Test-Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "D4.VK-API-Test-Project";
@@ -371,7 +375,7 @@
 			baseConfigurationReference = C68E6636F29D4DE44F74CB1F /* Pods-VK-API-Test-Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5GRA9Q59XL;
+				DEVELOPMENT_TEAM = P9QAW5XHCR;
 				INFOPLIST_FILE = "VK-API-Test-Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "D4.VK-API-Test-Project";

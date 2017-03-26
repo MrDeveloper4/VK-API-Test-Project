@@ -9,9 +9,13 @@
 import UIKit
 import SwiftyVK
 
-typealias VKSignInCompletion = (_ error: AuthError?) -> Void
+typealias VKSignInCompletion = (_ error: AuthError?) -> ()
 
-class VkSignInHandler: VKDelegate {
+protocol VkSigningProtocol {
+	func signIn(signInCompletion: @escaping VKSignInCompletion)
+}
+
+class VkSigningHandler: VKDelegate, VkSigningProtocol {
 	
 	fileprivate var signInCompletion: VKSignInCompletion?
 	
@@ -27,7 +31,7 @@ class VkSignInHandler: VKDelegate {
 		VK.configure(withAppId: appID, delegate: self)
 	}
 	
-	func signIn(signInCompletion: @escaping VKSignInCompletion) -> Void {
+	func signIn(signInCompletion: @escaping VKSignInCompletion) {
 		VK.logIn()
 		self.signInCompletion = signInCompletion
 	}
@@ -55,7 +59,7 @@ class VkSignInHandler: VKDelegate {
 	func vkWillPresentView() -> UIViewController {
 		return UIApplication.shared.delegate!.window!!.rootViewController!
 	}
-
+	
 }
 
 

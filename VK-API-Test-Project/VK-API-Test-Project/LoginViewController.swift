@@ -11,18 +11,19 @@ import SwiftyVK
 
 class LoginViewController: UIViewController {
 
-	fileprivate let vkApiManager    = VkApiManager()
-	fileprivate var vkSignInHandler = VkSignInHandler()
-	fileprivate var alertsManager   = AlertsManager()
+	fileprivate let vkApiManager     = VkApiManager()
+	fileprivate var vkSigningHandler = VkSigningHandler()
+	fileprivate var alertsManager    = AlertsManager()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
 	@IBAction func loginButtonAction(_ sender: Any) {
-		vkSignInHandler.signIn { [weak self] error in
+		self.view.blockUI()
+		vkSigningHandler.signIn { [weak self] error in
 			guard let `self` = self else { return }
-			
+			self.view.unBlockUI()
 			if let signInError = error {
 				self.alertsManager.showCommonError(with: signInError.localizedDescription, in: self)
 			}
@@ -30,6 +31,10 @@ class LoginViewController: UIViewController {
 				self.performSegue(withIdentifier: "profileControllerSegue", sender: self)
 			}
 		}
+	}
+	
+	@IBAction func dismissProfileController(unwindSegue: UIStoryboardSegue) {
+		
 	}
 
 }

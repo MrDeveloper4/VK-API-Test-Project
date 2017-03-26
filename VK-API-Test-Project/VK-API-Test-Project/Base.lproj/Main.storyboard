@@ -94,26 +94,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vL-xf-35P">
-                                <rect key="frame" x="16" y="617" width="100" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.62360790157694135" blue="0.52149634072014872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="3xk-SA-als"/>
-                                    <constraint firstAttribute="height" constant="30" id="ZxR-vq-zlc"/>
-                                </constraints>
-                                <state key="normal" title="Logout">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="logoutButtonAction:" destination="RNG-yZ-p2n" eventType="touchUpInside" id="ACE-wn-0gy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-wb-jte">
                                 <rect key="frame" x="259" y="617" width="100" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.62360790160000001" blue="0.52149634069999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -137,13 +117,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zvv-hh-Jpr" firstAttribute="top" secondItem="7vL-xf-35P" secondAttribute="bottom" constant="20" id="8T4-2r-pYD"/>
                             <constraint firstItem="Zvv-hh-Jpr" firstAttribute="top" secondItem="gLi-wb-jte" secondAttribute="bottom" constant="20" id="Gpl-Le-Qnc"/>
                             <constraint firstItem="xpm-vN-HCl" firstAttribute="centerX" secondItem="gNB-7Q-ToD" secondAttribute="centerX" id="HZz-vG-7DG"/>
                             <constraint firstItem="gLi-wb-jte" firstAttribute="trailing" secondItem="gNB-7Q-ToD" secondAttribute="trailingMargin" id="QqI-Kx-ktX"/>
                             <constraint firstItem="xpm-vN-HCl" firstAttribute="centerY" secondItem="gNB-7Q-ToD" secondAttribute="centerY" multiplier="0.6" id="VPV-oX-Vmc"/>
                             <constraint firstItem="GMZ-pY-YJn" firstAttribute="top" secondItem="xpm-vN-HCl" secondAttribute="bottom" constant="8" id="aRb-OD-ymR"/>
-                            <constraint firstItem="7vL-xf-35P" firstAttribute="leading" secondItem="gNB-7Q-ToD" secondAttribute="leadingMargin" id="d4G-Tr-ElU"/>
                             <constraint firstItem="GMZ-pY-YJn" firstAttribute="centerX" secondItem="gNB-7Q-ToD" secondAttribute="centerX" id="jvw-EO-HYz"/>
                         </constraints>
                     </view>
