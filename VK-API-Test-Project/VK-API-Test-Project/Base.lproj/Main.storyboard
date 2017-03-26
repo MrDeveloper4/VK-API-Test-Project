@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="VK_API_Test_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,139 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="890-Dn-2Zn">
+                                <rect key="frame" x="101" y="304" width="172" height="58"/>
+                                <color key="backgroundColor" red="0.94792988578680204" green="0.48646401583181592" blue="0.45273979358964372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="RYf-BS-oQG"/>
+                                    <constraint firstAttribute="height" constant="58" id="gth-hx-Xl4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uTB-4M-ahd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="890-Dn-2Zn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DCx-nR-ZX5"/>
+                            <constraint firstItem="890-Dn-2Zn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zH1-x5-TaE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="RNG-yZ-p2n" kind="presentation" identifier="profileControllerSegue" id="KhG-ha-lml"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="31.934032983508249"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="Qhx-H7-0N1">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="RNG-yZ-p2n" customClass="ProfileViewController" customModule="VK_API_Test_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P9g-3b-w8H"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zvv-hh-Jpr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gNB-7Q-ToD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xpm-vN-HCl">
+                                <rect key="frame" x="87" y="100" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AIC-y0-vC4"/>
+                                    <constraint firstAttribute="height" constant="200" id="gja-TN-s7e"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Surname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMZ-pY-YJn">
+                                <rect key="frame" x="87" y="308" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dWE-FQ-98B"/>
+                                    <constraint firstAttribute="width" constant="200" id="n4L-4Y-3rB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vL-xf-35P">
+                                <rect key="frame" x="16" y="617" width="100" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.62360790157694135" blue="0.52149634072014872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3xk-SA-als"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZxR-vq-zlc"/>
+                                </constraints>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logoutButtonAction:" destination="RNG-yZ-p2n" eventType="touchUpInside" id="ACE-wn-0gy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-wb-jte">
+                                <rect key="frame" x="259" y="617" width="100" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.62360790160000001" blue="0.52149634069999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T5z-Fa-jOV"/>
+                                    <constraint firstAttribute="width" constant="100" id="mTP-du-QJs"/>
+                                </constraints>
+                                <state key="normal" title="Albums">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="albumsButtonAction:" destination="RNG-yZ-p2n" eventType="touchUpInside" id="3AL-Gk-stE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zvv-hh-Jpr" firstAttribute="top" secondItem="7vL-xf-35P" secondAttribute="bottom" constant="20" id="8T4-2r-pYD"/>
+                            <constraint firstItem="Zvv-hh-Jpr" firstAttribute="top" secondItem="gLi-wb-jte" secondAttribute="bottom" constant="20" id="Gpl-Le-Qnc"/>
+                            <constraint firstItem="xpm-vN-HCl" firstAttribute="centerX" secondItem="gNB-7Q-ToD" secondAttribute="centerX" id="HZz-vG-7DG"/>
+                            <constraint firstItem="gLi-wb-jte" firstAttribute="trailing" secondItem="gNB-7Q-ToD" secondAttribute="trailingMargin" id="QqI-Kx-ktX"/>
+                            <constraint firstItem="xpm-vN-HCl" firstAttribute="centerY" secondItem="gNB-7Q-ToD" secondAttribute="centerY" multiplier="0.6" id="VPV-oX-Vmc"/>
+                            <constraint firstItem="GMZ-pY-YJn" firstAttribute="top" secondItem="xpm-vN-HCl" secondAttribute="bottom" constant="8" id="aRb-OD-ymR"/>
+                            <constraint firstItem="7vL-xf-35P" firstAttribute="leading" secondItem="gNB-7Q-ToD" secondAttribute="leadingMargin" id="d4G-Tr-ElU"/>
+                            <constraint firstItem="GMZ-pY-YJn" firstAttribute="centerX" secondItem="gNB-7Q-ToD" secondAttribute="centerX" id="jvw-EO-HYz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userAvatarImageView" destination="xpm-vN-HCl" id="p7v-jT-6ff"/>
+                        <outlet property="usernameLabel" destination="GMZ-pY-YJn" id="A6w-wM-ZMx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnq-xg-IFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="32"/>
         </scene>
     </scenes>
 </document>

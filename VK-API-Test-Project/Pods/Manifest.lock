@@ -1,3 +1,24 @@
-PODFILE CHECKSUM: 69ec1f6f97439474e66314841032800daa43bb50
+PODS:
+  - MBProgressHUD (1.0.0)
+  - SwiftyVK (2.0.6)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 1.0.0)
+  - SwiftyVK (from `https://github.com/WE-St0r/SwiftyVK.git`)
+
+EXTERNAL SOURCES:
+  SwiftyVK:
+    :git: https://github.com/WE-St0r/SwiftyVK.git
+
+CHECKOUT OPTIONS:
+  SwiftyVK:
+    :commit: 2de3b5ed544d726ae7db7b41713eb5d86c65fe28
+    :git: https://github.com/WE-St0r/SwiftyVK.git
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SwiftyVK: fb33844f10f39351739f4a716eb8a7fe48ad3416
+
+PODFILE CHECKSUM: 50d3115a54f516326b9b7a50807c16a7735598fd
 
 COCOAPODS: 1.2.0.rc.1

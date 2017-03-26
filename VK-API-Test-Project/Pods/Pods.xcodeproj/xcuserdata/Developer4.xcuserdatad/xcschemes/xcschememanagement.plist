@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-VK-API-Test-Project.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyVK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -12,7 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CBA1D74CE45ECF41BCF89D170685E887</key>
+		<key>1CF2D886F37E67FBC67927623B210B0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>41FA54D12162DAD51D02FC58A2CD5034</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDBB3D4C5DF87E932519E29E29052DF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
