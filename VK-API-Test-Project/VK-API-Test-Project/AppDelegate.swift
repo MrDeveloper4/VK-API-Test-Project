@@ -15,11 +15,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
-
+	fileprivate var isUserLogedIn: Bool {
+		get {
+			return VK.state == .authorized ? true : false
+		}
+	}
+	
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+		window =  UIWindow(frame: UIScreen.main.bounds)
+		window?.makeKeyAndVisible()
 		
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		
+		if let window = self.window {
+			if isUserLogedIn {
+				let rootController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
+				window.rootViewController = rootController
+			}
+			else {
+				let rootController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+				window.rootViewController = rootController
+			}
+		}
 		
+		return true
+	}
+	
+	func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+		let app = options[.sourceApplication] as? String
+		VK.process(url: url, sourceApplication: app)
 		return true
 	}
 

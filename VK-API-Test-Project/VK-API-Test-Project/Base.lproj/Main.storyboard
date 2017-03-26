@@ -14,7 +14,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="VK_API_Test_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="VK_API_Test_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -51,6 +51,9 @@
                             <constraint firstItem="890-Dn-2Zn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zH1-x5-TaE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="RNG-yZ-p2n" kind="presentation" identifier="profileControllerSegue" id="KhG-ha-lml"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,7 +62,7 @@
         <!--Profile View Controller-->
         <scene sceneID="Qhx-H7-0N1">
             <objects>
-                <viewController id="RNG-yZ-p2n" customClass="ProfileViewController" customModule="VK_API_Test_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="RNG-yZ-p2n" customClass="ProfileViewController" customModule="VK_API_Test_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P9g-3b-w8H"/>
                         <viewControllerLayoutGuide type="bottom" id="Zvv-hh-Jpr"/>
@@ -151,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rnq-xg-IFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.59999999999999" y="696.7016491754124"/>
+            <point key="canvasLocation" x="876" y="32"/>
         </scene>
     </scenes>
 </document>
