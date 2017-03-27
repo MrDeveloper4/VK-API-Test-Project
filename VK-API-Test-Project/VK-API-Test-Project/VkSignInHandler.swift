@@ -15,17 +15,12 @@ protocol VkSigningProtocol {
 	func signIn(signInCompletion: @escaping VKSignInCompletion)
 }
 
-class VkSigningHandler: VKDelegate, VkSigningProtocol {
+fileprivate let appID = "5947003"
+
+class VkSignInHandler: VKDelegate, VkSigningProtocol {
 	
 	fileprivate var signInCompletion: VKSignInCompletion?
-	
-	fileprivate let appID = "5947003"
 	fileprivate let scope: Set<VK.Scope> = [.photos]
-	var isUserLogedIn: Bool {
-		get {
-			return VK.state == .authorized ? true : false
-		}
-	}
 	
 	init() {
 		VK.configure(withAppId: appID, delegate: self)
@@ -35,7 +30,7 @@ class VkSigningHandler: VKDelegate, VkSigningProtocol {
 		VK.logIn()
 		self.signInCompletion = signInCompletion
 	}
-	
+
 	func vkWillAuthorize() -> Set<VK.Scope> {
 		return scope
 	}

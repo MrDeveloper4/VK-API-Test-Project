@@ -1,9 +1,13 @@
 PODS:
   - MBProgressHUD (1.0.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - SwiftyVK (2.0.6)
 
 DEPENDENCIES:
   - MBProgressHUD (~> 1.0.0)
+  - SDWebImage (~> 3.8)
   - SwiftyVK (from `https://github.com/WE-St0r/SwiftyVK.git`)
 
 EXTERNAL SOURCES:
@@ -17,8 +21,9 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyVK: fb33844f10f39351739f4a716eb8a7fe48ad3416
 
-PODFILE CHECKSUM: 50d3115a54f516326b9b7a50807c16a7735598fd
+PODFILE CHECKSUM: ce819db1a1ec16e4955a702d74ff76909b8831c3
 
 COCOAPODS: 1.2.0.rc.1

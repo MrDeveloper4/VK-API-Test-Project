@@ -16,8 +16,11 @@
 		48F576E61E87C5B100AB991E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576E51E87C5B100AB991E /* ProfileViewController.swift */; };
 		48F576EA1E87CADC00AB991E /* VkApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576E91E87CADC00AB991E /* VkApiManager.swift */; };
 		48F576EE1E87DA2D00AB991E /* AlertsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576ED1E87DA2D00AB991E /* AlertsManager.swift */; };
-		48F576F01E87DFF300AB991E /* VkSigningHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576EF1E87DFF300AB991E /* VkSigningHandler.swift */; };
+		48F576F01E87DFF300AB991E /* VkSignInHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576EF1E87DFF300AB991E /* VkSignInHandler.swift */; };
 		48F576F21E87E50000AB991E /* UIView+BlockUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576F11E87E50000AB991E /* UIView+BlockUI.swift */; };
+		48F576F61E87E83500AB991E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576F51E87E83500AB991E /* User.swift */; };
+		48F576F81E89198200AB991E /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576F71E89198200AB991E /* ReachabilityManager.swift */; };
+		48F576FC1E891E3D00AB991E /* UIViewController+Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576FB1E891E3D00AB991E /* UIViewController+Connection.swift */; };
 		D638427D03D47BF0D7BB0FED /* Pods_VK_API_Test_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0225A681BAD197F01207B3 /* Pods_VK_API_Test_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +36,11 @@
 		48F576E51E87C5B100AB991E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		48F576E91E87CADC00AB991E /* VkApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VkApiManager.swift; sourceTree = "<group>"; };
 		48F576ED1E87DA2D00AB991E /* AlertsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsManager.swift; sourceTree = "<group>"; };
-		48F576EF1E87DFF300AB991E /* VkSigningHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VkSigningHandler.swift; sourceTree = "<group>"; };
+		48F576EF1E87DFF300AB991E /* VkSignInHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VkSignInHandler.swift; sourceTree = "<group>"; };
 		48F576F11E87E50000AB991E /* UIView+BlockUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BlockUI.swift"; sourceTree = "<group>"; };
+		48F576F51E87E83500AB991E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		48F576F71E89198200AB991E /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		48F576FB1E891E3D00AB991E /* UIViewController+Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Connection.swift"; sourceTree = "<group>"; };
 		C68E6636F29D4DE44F74CB1F /* Pods-VK-API-Test-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API-Test-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-VK-API-Test-Project/Pods-VK-API-Test-Project.release.xcconfig"; sourceTree = "<group>"; };
 		DA0225A681BAD197F01207B3 /* Pods_VK_API_Test_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_API_Test_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49F7EB0552373CE9579B8DC /* Pods-VK-API-Test-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API-Test-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VK-API-Test-Project/Pods-VK-API-Test-Project.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,19 +88,38 @@
 		48F576CD1E87BC4A00AB991E /* VK-API-Test-Project */ = {
 			isa = PBXGroup;
 			children = (
-				48F576CE1E87BC4A00AB991E /* AppDelegate.swift */,
+				48F576F41E87E69C00AB991E /* Extensions */,
+				48F576F31E87E68500AB991E /* Managers */,
 				48F576D21E87BC4A00AB991E /* Main.storyboard */,
 				48F576E31E87C5A500AB991E /* LoginViewController.swift */,
+				48F576F51E87E83500AB991E /* User.swift */,
+				48F576FB1E891E3D00AB991E /* UIViewController+Connection.swift */,
 				48F576E51E87C5B100AB991E /* ProfileViewController.swift */,
-				48F576E91E87CADC00AB991E /* VkApiManager.swift */,
-				48F576EF1E87DFF300AB991E /* VkSigningHandler.swift */,
-				48F576ED1E87DA2D00AB991E /* AlertsManager.swift */,
-				48F576F11E87E50000AB991E /* UIView+BlockUI.swift */,
-				48F576D81E87BC4A00AB991E /* Assets.xcassets */,
+				48F576F71E89198200AB991E /* ReachabilityManager.swift */,
 				48F576DD1E87BC4A00AB991E /* Info.plist */,
+				48F576D81E87BC4A00AB991E /* Assets.xcassets */,
+				48F576CE1E87BC4A00AB991E /* AppDelegate.swift */,
 				48F576DA1E87BC4A00AB991E /* LaunchScreen.storyboard */,
 			);
 			path = "VK-API-Test-Project";
+			sourceTree = "<group>";
+		};
+		48F576F31E87E68500AB991E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				48F576ED1E87DA2D00AB991E /* AlertsManager.swift */,
+				48F576EF1E87DFF300AB991E /* VkSignInHandler.swift */,
+				48F576E91E87CADC00AB991E /* VkApiManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		48F576F41E87E69C00AB991E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				48F576F11E87E50000AB991E /* UIView+BlockUI.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		866B9AC863009B320A2DFACA /* Pods */ = {
@@ -231,10 +256,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F576EA1E87CADC00AB991E /* VkApiManager.swift in Sources */,
-				48F576F01E87DFF300AB991E /* VkSigningHandler.swift in Sources */,
+				48F576F01E87DFF300AB991E /* VkSignInHandler.swift in Sources */,
 				48F576E41E87C5A500AB991E /* LoginViewController.swift in Sources */,
 				48F576CF1E87BC4A00AB991E /* AppDelegate.swift in Sources */,
+				48F576F81E89198200AB991E /* ReachabilityManager.swift in Sources */,
 				48F576F21E87E50000AB991E /* UIView+BlockUI.swift in Sources */,
+				48F576FC1E891E3D00AB991E /* UIViewController+Connection.swift in Sources */,
+				48F576F61E87E83500AB991E /* User.swift in Sources */,
 				48F576E61E87C5B100AB991E /* ProfileViewController.swift in Sources */,
 				48F576EE1E87DA2D00AB991E /* AlertsManager.swift in Sources */,
 				48F576D71E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodeld in Sources */,

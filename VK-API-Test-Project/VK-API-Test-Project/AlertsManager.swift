@@ -10,9 +10,9 @@ import UIKit
 
 class AlertsManager {
 	func showCommonError(with errorMessage: String, in viewController: UIViewController) {
-		let errorAlert = UIAlertController(title: NSLocalizedString("Error", comment: ""), message: errorMessage, preferredStyle: .alert)
+		let errorAlert = UIAlertController(title: NSLocalizedString(NSLocalizedString("Error", comment: ""), comment: ""), message: errorMessage, preferredStyle: .alert)
 		
-		let cancelAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .cancel, handler: nil)
+		let cancelAction = UIAlertAction(title: NSLocalizedString(NSLocalizedString("OK", comment: ""), comment: ""), style: .cancel, handler: nil)
 		errorAlert.addAction(cancelAction)
 		
 		viewController.present(errorAlert, animated: true, completion: nil)
