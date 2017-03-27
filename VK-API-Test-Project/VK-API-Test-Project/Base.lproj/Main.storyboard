@@ -6,8 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,102 +50,20 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="RNG-yZ-p2n" kind="presentation" identifier="profileControllerSegue" id="KhG-ha-lml"/>
+                        <segue destination="XXi-Iv-U3h" kind="presentation" identifier="profileControllerSegue" id="77B-eB-JXB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.59999999999999" y="31.934032983508249"/>
+            <point key="canvasLocation" x="225" y="32"/>
         </scene>
-        <!--Profile View Controller-->
-        <scene sceneID="Qhx-H7-0N1">
+        <!--Storyboard Reference-->
+        <scene sceneID="API-Bk-ZEf">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" id="RNG-yZ-p2n" customClass="ProfileViewController" customModule="VK_API_Test_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="P9g-3b-w8H"/>
-                        <viewControllerLayoutGuide type="bottom" id="Zvv-hh-Jpr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gNB-7Q-ToD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDA-2T-gr2">
-                                <rect key="frame" x="87" y="100" width="200" height="200"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xpm-vN-HCl">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                        <color key="backgroundColor" red="0.96011635936100326" green="0.96962246192893398" blue="0.96962246192893398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="AIC-y0-vC4"/>
-                                            <constraint firstAttribute="height" constant="200" id="gja-TN-s7e"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="100"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="G5F-mn-nEs"/>
-                                    <constraint firstAttribute="height" constant="200" id="Vmr-v3-mFP"/>
-                                    <constraint firstItem="xpm-vN-HCl" firstAttribute="centerX" secondItem="tDA-2T-gr2" secondAttribute="centerX" id="mN7-s3-bFR"/>
-                                    <constraint firstItem="xpm-vN-HCl" firstAttribute="centerY" secondItem="tDA-2T-gr2" secondAttribute="centerY" id="p79-7c-OIS"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMZ-pY-YJn">
-                                <rect key="frame" x="87" y="308" width="200" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="dWE-FQ-98B"/>
-                                    <constraint firstAttribute="width" constant="200" id="n4L-4Y-3rB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-wb-jte">
-                                <rect key="frame" x="259" y="617" width="100" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.62360790160000001" blue="0.52149634069999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="T5z-Fa-jOV"/>
-                                    <constraint firstAttribute="width" constant="100" id="mTP-du-QJs"/>
-                                </constraints>
-                                <state key="normal" title="Albums">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="albumsButtonAction:" destination="RNG-yZ-p2n" eventType="touchUpInside" id="3AL-Gk-stE"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="tDA-2T-gr2" firstAttribute="centerY" secondItem="gNB-7Q-ToD" secondAttribute="centerY" multiplier="0.6" id="5Jt-JX-Mxn"/>
-                            <constraint firstItem="Zvv-hh-Jpr" firstAttribute="top" secondItem="gLi-wb-jte" secondAttribute="bottom" constant="20" id="Gpl-Le-Qnc"/>
-                            <constraint firstItem="tDA-2T-gr2" firstAttribute="centerX" secondItem="gNB-7Q-ToD" secondAttribute="centerX" id="IbF-qg-3cL"/>
-                            <constraint firstItem="GMZ-pY-YJn" firstAttribute="top" secondItem="tDA-2T-gr2" secondAttribute="bottom" constant="8" symbolic="YES" id="Inh-DG-ps0"/>
-                            <constraint firstItem="gLi-wb-jte" firstAttribute="trailing" secondItem="gNB-7Q-ToD" secondAttribute="trailingMargin" id="QqI-Kx-ktX"/>
-                            <constraint firstItem="GMZ-pY-YJn" firstAttribute="centerX" secondItem="gNB-7Q-ToD" secondAttribute="centerX" id="jvw-EO-HYz"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="userAvatarImageView" destination="xpm-vN-HCl" id="p7v-jT-6ff"/>
-                        <outlet property="usernameLabel" destination="GMZ-pY-YJn" id="A6w-wM-ZMx"/>
-                        <segue destination="ag7-da-P5R" kind="unwind" identifier="dismissProfileController" unwindAction="dismissProfileControllerWithUnwindSegue:" id="cHT-rx-8HJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnq-xg-IFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="ag7-da-P5R" userLabel="Exit" sceneMemberID="exit"/>
+                <viewControllerPlaceholder id="XXi-Iv-U3h" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5v7-1U-q7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876" y="32"/>
+            <point key="canvasLocation" x="858" y="31"/>
         </scene>
     </scenes>
 </document>

@@ -34,8 +34,9 @@ class ProfileViewController: UIViewController {
 			}
 			if let currentUser = user {
 				if let link = currentUser.avatarLink {
-					self.userAvatarImageView.sd_setImage(with: URL(string: link), placeholderImage: UIImage(named: "placeholder"))
 					self.userAvatarImageView.setShowActivityIndicator(true)
+					self.userAvatarImageView.setIndicatorStyle(.gray)
+					self.userAvatarImageView.sd_setImage(with: URL(string: link), placeholderImage: UIImage(named: "placeholder"))
 				}
 				DispatchQueue.main.async {
 					self.usernameLabel.text = currentUser.fullName
@@ -46,7 +47,11 @@ class ProfileViewController: UIViewController {
 	
 	@IBAction func albumsButtonAction(_ sender: Any) {
 		if self.isConnectedToNetwork(in: self) {
-			
+			performSegue(withIdentifier: "ToAlbumsSegue", sender: self)
 		}
+	}
+	
+	@IBAction func dismissAlbumsController(unwindSegue: UIStoryboardSegue) {
+		
 	}
 }

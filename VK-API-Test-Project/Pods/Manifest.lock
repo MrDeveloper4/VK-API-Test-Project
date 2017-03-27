@@ -1,4 +1,6 @@
 PODS:
+  - Agrume (3.1.1)
+  - MapleBacon (3.0.1)
   - MBProgressHUD (1.0.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -6,24 +8,33 @@ PODS:
   - SwiftyVK (2.0.6)
 
 DEPENDENCIES:
+  - Agrume (from `https://github.com/JanGorman/Agrume.git`)
+  - MapleBacon
   - MBProgressHUD (~> 1.0.0)
   - SDWebImage (~> 3.8)
   - SwiftyVK (from `https://github.com/WE-St0r/SwiftyVK.git`)
 
 EXTERNAL SOURCES:
+  Agrume:
+    :git: https://github.com/JanGorman/Agrume.git
   SwiftyVK:
     :git: https://github.com/WE-St0r/SwiftyVK.git
 
 CHECKOUT OPTIONS:
+  Agrume:
+    :commit: 4fee2af652675cfb683ccd3040d91918a8ae7dac
+    :git: https://github.com/JanGorman/Agrume.git
   SwiftyVK:
     :commit: 2de3b5ed544d726ae7db7b41713eb5d86c65fe28
     :git: https://github.com/WE-St0r/SwiftyVK.git
 
 SPEC CHECKSUMS:
+  Agrume: d7f80bd3931cd2cb9488546089bab696ffca4118
+  MapleBacon: 8fb0c45a0f147049ad49af6b36ac04a649baa74d
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyVK: fb33844f10f39351739f4a716eb8a7fe48ad3416
 
-PODFILE CHECKSUM: ce819db1a1ec16e4955a702d74ff76909b8831c3
+PODFILE CHECKSUM: f9e2a6a4be54ea019049bd010741c6fa88e050bf
 
 COCOAPODS: 1.2.0.rc.1

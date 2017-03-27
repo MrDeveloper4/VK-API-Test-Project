@@ -26,14 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window =  UIWindow(frame: UIScreen.main.bounds)
 		window?.makeKeyAndVisible()
 		
-		let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		
 		if let window = self.window {
 			if isUserLogedIn {
+				let storyboard = UIStoryboard(name: "Profile", bundle: nil)
 				let rootController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
 				window.rootViewController = rootController
 			}
 			else {
+				let storyboard = UIStoryboard(name: "Main", bundle: nil)
 				let rootController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
 				window.rootViewController = rootController
 			}

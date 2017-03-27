@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="B4M-0B-fnq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photos-->
+        <scene sceneID="dCl-Ke-PQr">
+            <objects>
+                <tableViewController id="vUV-cl-iOJ" customClass="PhotosTableViewController" customModule="VK_API_Test_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="x1G-Ex-y4k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="albumCell" rowHeight="80" id="6uC-Gz-qcY" customClass="PhotoTableViewCell" customModule="VK_API_Test_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6uC-Gz-qcY" id="hTB-5x-8Y5">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oCi-L3-Kho">
+                                            <rect key="frame" x="8" y="4" width="71" height="71"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="71" id="31g-ua-4SR"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="oCi-L3-Kho" secondAttribute="bottom" constant="4" id="9QH-mu-wpW"/>
+                                        <constraint firstItem="oCi-L3-Kho" firstAttribute="leading" secondItem="hTB-5x-8Y5" secondAttribute="leading" constant="8" id="IzV-rw-rHp"/>
+                                        <constraint firstItem="oCi-L3-Kho" firstAttribute="top" secondItem="hTB-5x-8Y5" secondAttribute="top" constant="4" id="fqC-bS-7pT"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="coverImageView" destination="oCi-L3-Kho" id="PV6-i8-qjR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vUV-cl-iOJ" id="fjT-kU-Xiu"/>
+                            <outlet property="delegate" destination="vUV-cl-iOJ" id="XPm-T1-Fei"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Photos" id="4L4-ci-Uu0">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="8jM-Jw-MQf">
+                            <connections>
+                                <segue destination="kgQ-R6-COq" kind="unwind" unwindAction="dismissPhotosControllerWithUnwindSegue:" id="SOh-Yk-OR7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VaB-ma-Qui" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="kgQ-R6-COq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1461.5999999999999" y="152.47376311844079"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ugw-xf-swQ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gVV-DT-l0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B4M-0B-fnq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WnQ-on-RSa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vUV-cl-iOJ" kind="relationship" relationship="rootViewController" id="5uS-3d-DL8"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="676" y="154.27286356821591"/>
+        </scene>
+    </scenes>
+</document>
