@@ -46,7 +46,11 @@ class ProfileViewController: UIViewController {
 	
 	@IBAction func albumsButtonAction(_ sender: Any) {
 		if self.isConnectedToNetwork(in: self) {
-			
+			performSegue(withIdentifier: "ToAlbumsSegue", sender: self)
 		}
+	}
+	
+	@IBAction func dismissAlbumsController(unwindSegue: UIStoryboardSegue) {
+		
 	}
 }

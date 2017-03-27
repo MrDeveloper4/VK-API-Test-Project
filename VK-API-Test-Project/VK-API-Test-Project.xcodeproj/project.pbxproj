@@ -21,6 +21,12 @@
 		48F576F61E87E83500AB991E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576F51E87E83500AB991E /* User.swift */; };
 		48F576F81E89198200AB991E /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576F71E89198200AB991E /* ReachabilityManager.swift */; };
 		48F576FC1E891E3D00AB991E /* UIViewController+Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576FB1E891E3D00AB991E /* UIViewController+Connection.swift */; };
+		48F576FE1E8928F600AB991E /* Albums.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F576FD1E8928F600AB991E /* Albums.storyboard */; };
+		48F577001E892BB000AB991E /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F576FF1E892BB000AB991E /* AlbumsTableViewController.swift */; };
+		48F577021E892C6700AB991E /* AlbumsTableViewController+Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F577011E892C6700AB991E /* AlbumsTableViewController+Datasource.swift */; };
+		48F577041E892C7100AB991E /* AlbumsTableViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F577031E892C7100AB991E /* AlbumsTableViewController+Delegate.swift */; };
+		48F577061E89302C00AB991E /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F577051E89302C00AB991E /* Album.swift */; };
+		48F5770A1E89428700AB991E /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F577091E89428700AB991E /* AlbumTableViewCell.swift */; };
 		D638427D03D47BF0D7BB0FED /* Pods_VK_API_Test_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0225A681BAD197F01207B3 /* Pods_VK_API_Test_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,12 @@
 		48F576F51E87E83500AB991E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		48F576F71E89198200AB991E /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		48F576FB1E891E3D00AB991E /* UIViewController+Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Connection.swift"; sourceTree = "<group>"; };
+		48F576FD1E8928F600AB991E /* Albums.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Albums.storyboard; sourceTree = "<group>"; };
+		48F576FF1E892BB000AB991E /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
+		48F577011E892C6700AB991E /* AlbumsTableViewController+Datasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlbumsTableViewController+Datasource.swift"; sourceTree = "<group>"; };
+		48F577031E892C7100AB991E /* AlbumsTableViewController+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlbumsTableViewController+Delegate.swift"; sourceTree = "<group>"; };
+		48F577051E89302C00AB991E /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		48F577091E89428700AB991E /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		C68E6636F29D4DE44F74CB1F /* Pods-VK-API-Test-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API-Test-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-VK-API-Test-Project/Pods-VK-API-Test-Project.release.xcconfig"; sourceTree = "<group>"; };
 		DA0225A681BAD197F01207B3 /* Pods_VK_API_Test_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_API_Test_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49F7EB0552373CE9579B8DC /* Pods-VK-API-Test-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API-Test-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VK-API-Test-Project/Pods-VK-API-Test-Project.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,11 +100,14 @@
 		48F576CD1E87BC4A00AB991E /* VK-API-Test-Project */ = {
 			isa = PBXGroup;
 			children = (
+				48F5770B1E8944FF00AB991E /* Albums */,
 				48F576F41E87E69C00AB991E /* Extensions */,
 				48F576F31E87E68500AB991E /* Managers */,
 				48F576D21E87BC4A00AB991E /* Main.storyboard */,
+				48F577091E89428700AB991E /* AlbumTableViewCell.swift */,
 				48F576E31E87C5A500AB991E /* LoginViewController.swift */,
 				48F576F51E87E83500AB991E /* User.swift */,
+				48F577051E89302C00AB991E /* Album.swift */,
 				48F576FB1E891E3D00AB991E /* UIViewController+Connection.swift */,
 				48F576E51E87C5B100AB991E /* ProfileViewController.swift */,
 				48F576F71E89198200AB991E /* ReachabilityManager.swift */,
@@ -120,6 +135,17 @@
 				48F576F11E87E50000AB991E /* UIView+BlockUI.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		48F5770B1E8944FF00AB991E /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				48F576FF1E892BB000AB991E /* AlbumsTableViewController.swift */,
+				48F577011E892C6700AB991E /* AlbumsTableViewController+Datasource.swift */,
+				48F577031E892C7100AB991E /* AlbumsTableViewController+Delegate.swift */,
+				48F576FD1E8928F600AB991E /* Albums.storyboard */,
+			);
+			name = Albums;
 			sourceTree = "<group>";
 		};
 		866B9AC863009B320A2DFACA /* Pods */ = {
@@ -194,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F576FE1E8928F600AB991E /* Albums.storyboard in Resources */,
 				48F576DC1E87BC4A00AB991E /* LaunchScreen.storyboard in Resources */,
 				48F576D91E87BC4A00AB991E /* Assets.xcassets in Resources */,
 				48F576D41E87BC4A00AB991E /* Main.storyboard in Resources */,
@@ -255,17 +282,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F577041E892C7100AB991E /* AlbumsTableViewController+Delegate.swift in Sources */,
 				48F576EA1E87CADC00AB991E /* VkApiManager.swift in Sources */,
+				48F577001E892BB000AB991E /* AlbumsTableViewController.swift in Sources */,
 				48F576F01E87DFF300AB991E /* VkSignInHandler.swift in Sources */,
 				48F576E41E87C5A500AB991E /* LoginViewController.swift in Sources */,
 				48F576CF1E87BC4A00AB991E /* AppDelegate.swift in Sources */,
 				48F576F81E89198200AB991E /* ReachabilityManager.swift in Sources */,
+				48F5770A1E89428700AB991E /* AlbumTableViewCell.swift in Sources */,
+				48F577021E892C6700AB991E /* AlbumsTableViewController+Datasource.swift in Sources */,
 				48F576F21E87E50000AB991E /* UIView+BlockUI.swift in Sources */,
 				48F576FC1E891E3D00AB991E /* UIViewController+Connection.swift in Sources */,
 				48F576F61E87E83500AB991E /* User.swift in Sources */,
 				48F576E61E87C5B100AB991E /* ProfileViewController.swift in Sources */,
 				48F576EE1E87DA2D00AB991E /* AlertsManager.swift in Sources */,
 				48F576D71E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodeld in Sources */,
+				48F577061E89302C00AB991E /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
