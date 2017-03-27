@@ -18,8 +18,9 @@ class AlbumTableViewCell: UITableViewCell {
 		self.titleLabel.text = album.name
 		self.descriptionLabel.text = album.descr
 		if let link = album.coverLink {
-			self.coverImageView?.sd_setImage(with: URL(string: link), placeholderImage: UIImage(named: "placeholder"))
-			self.coverImageView?.setShowActivityIndicator(true)
+			self.coverImageView.setShowActivityIndicator(true)
+			self.coverImageView.setIndicatorStyle(.gray)
+			self.coverImageView.sd_setImage(with: URL(string: link), placeholderImage: UIImage(named: "placeholder"))
 		}
 	}
 }

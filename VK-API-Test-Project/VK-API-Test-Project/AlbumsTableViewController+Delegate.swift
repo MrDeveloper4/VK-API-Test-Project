@@ -9,5 +9,8 @@
 import UIKit
 
 extension AlbumsTableViewController {
-	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		selectedAlbum = albums[indexPath.row]
+		performSegue(withIdentifier: "toPhotosSegue", sender: self)
+	}
 }

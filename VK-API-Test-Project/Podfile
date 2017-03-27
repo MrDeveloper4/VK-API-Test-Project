@@ -9,5 +9,6 @@ target 'VK-API-Test-Project' do
   pod 'SwiftyVK', :git => 'https://github.com/WE-St0r/SwiftyVK.git'
   pod 'MBProgressHUD', '~> 1.0.0'
   pod 'SDWebImage', '~>3.8'
-
+  pod 'Agrume', :git => 'https://github.com/JanGorman/Agrume.git'
+  pod 'MapleBacon'
 end

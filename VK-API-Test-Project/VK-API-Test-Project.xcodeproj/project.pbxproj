@@ -27,6 +27,13 @@
 		48F577041E892C7100AB991E /* AlbumsTableViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F577031E892C7100AB991E /* AlbumsTableViewController+Delegate.swift */; };
 		48F577061E89302C00AB991E /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F577051E89302C00AB991E /* Album.swift */; };
 		48F5770A1E89428700AB991E /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F577091E89428700AB991E /* AlbumTableViewCell.swift */; };
+		48F5770F1E89470100AB991E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F5770E1E89470100AB991E /* Profile.storyboard */; };
+		48F577121E894A1A00AB991E /* Photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F577111E894A1A00AB991E /* Photos.storyboard */; };
+		48F577141E894B2600AB991E /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F577131E894B2600AB991E /* PhotosTableViewController.swift */; };
+		48F577161E894B5F00AB991E /* PhotosTableViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F577151E894B5F00AB991E /* PhotosTableViewController+DataSource.swift */; };
+		48F577181E894FB200AB991E /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F577171E894FB200AB991E /* PhotoTableViewCell.swift */; };
+		48F5771A1E89514100AB991E /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F577191E89514100AB991E /* Image.swift */; };
+		48F5771C1E897C4F00AB991E /* PhotosTableViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5771B1E897C4F00AB991E /* PhotosTableViewController+Delegate.swift */; };
 		D638427D03D47BF0D7BB0FED /* Pods_VK_API_Test_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0225A681BAD197F01207B3 /* Pods_VK_API_Test_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +60,13 @@
 		48F577031E892C7100AB991E /* AlbumsTableViewController+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlbumsTableViewController+Delegate.swift"; sourceTree = "<group>"; };
 		48F577051E89302C00AB991E /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		48F577091E89428700AB991E /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		48F5770E1E89470100AB991E /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		48F577111E894A1A00AB991E /* Photos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Photos.storyboard; sourceTree = "<group>"; };
+		48F577131E894B2600AB991E /* PhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
+		48F577151E894B5F00AB991E /* PhotosTableViewController+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotosTableViewController+DataSource.swift"; sourceTree = "<group>"; };
+		48F577171E894FB200AB991E /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		48F577191E89514100AB991E /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		48F5771B1E897C4F00AB991E /* PhotosTableViewController+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotosTableViewController+Delegate.swift"; sourceTree = "<group>"; };
 		C68E6636F29D4DE44F74CB1F /* Pods-VK-API-Test-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API-Test-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-VK-API-Test-Project/Pods-VK-API-Test-Project.release.xcconfig"; sourceTree = "<group>"; };
 		DA0225A681BAD197F01207B3 /* Pods_VK_API_Test_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_API_Test_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49F7EB0552373CE9579B8DC /* Pods-VK-API-Test-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API-Test-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VK-API-Test-Project/Pods-VK-API-Test-Project.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,17 +114,13 @@
 		48F576CD1E87BC4A00AB991E /* VK-API-Test-Project */ = {
 			isa = PBXGroup;
 			children = (
-				48F5770B1E8944FF00AB991E /* Albums */,
+				48F576E31E87C5A500AB991E /* LoginViewController.swift */,
+				48F576D21E87BC4A00AB991E /* Main.storyboard */,
 				48F576F41E87E69C00AB991E /* Extensions */,
 				48F576F31E87E68500AB991E /* Managers */,
-				48F576D21E87BC4A00AB991E /* Main.storyboard */,
-				48F577091E89428700AB991E /* AlbumTableViewCell.swift */,
-				48F576E31E87C5A500AB991E /* LoginViewController.swift */,
-				48F576F51E87E83500AB991E /* User.swift */,
-				48F577051E89302C00AB991E /* Album.swift */,
-				48F576FB1E891E3D00AB991E /* UIViewController+Connection.swift */,
-				48F576E51E87C5B100AB991E /* ProfileViewController.swift */,
-				48F576F71E89198200AB991E /* ReachabilityManager.swift */,
+				48F5770D1E89460700AB991E /* Profile */,
+				48F5770B1E8944FF00AB991E /* Albums */,
+				48F577101E8949F000AB991E /* Photos */,
 				48F576DD1E87BC4A00AB991E /* Info.plist */,
 				48F576D81E87BC4A00AB991E /* Assets.xcassets */,
 				48F576CE1E87BC4A00AB991E /* AppDelegate.swift */,
@@ -125,6 +135,7 @@
 				48F576ED1E87DA2D00AB991E /* AlertsManager.swift */,
 				48F576EF1E87DFF300AB991E /* VkSignInHandler.swift */,
 				48F576E91E87CADC00AB991E /* VkApiManager.swift */,
+				48F576F71E89198200AB991E /* ReachabilityManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -133,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				48F576F11E87E50000AB991E /* UIView+BlockUI.swift */,
+				48F576FB1E891E3D00AB991E /* UIViewController+Connection.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -140,12 +152,77 @@
 		48F5770B1E8944FF00AB991E /* Albums */ = {
 			isa = PBXGroup;
 			children = (
+				48F5771F1E8986DB00AB991E /* Resources */,
+				48F5770C1E8945B900AB991E /* Views */,
 				48F576FF1E892BB000AB991E /* AlbumsTableViewController.swift */,
 				48F577011E892C6700AB991E /* AlbumsTableViewController+Datasource.swift */,
 				48F577031E892C7100AB991E /* AlbumsTableViewController+Delegate.swift */,
-				48F576FD1E8928F600AB991E /* Albums.storyboard */,
+				48F577051E89302C00AB991E /* Album.swift */,
 			);
 			name = Albums;
+			sourceTree = "<group>";
+		};
+		48F5770C1E8945B900AB991E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48F577091E89428700AB991E /* AlbumTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		48F5770D1E89460700AB991E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				48F577201E8986E800AB991E /* Resources */,
+				48F576F51E87E83500AB991E /* User.swift */,
+				48F576E51E87C5B100AB991E /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		48F577101E8949F000AB991E /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				48F5771E1E8986D100AB991E /* Resources */,
+				48F5771D1E8986C100AB991E /* Views */,
+				48F577131E894B2600AB991E /* PhotosTableViewController.swift */,
+				48F577151E894B5F00AB991E /* PhotosTableViewController+DataSource.swift */,
+				48F5771B1E897C4F00AB991E /* PhotosTableViewController+Delegate.swift */,
+				48F577191E89514100AB991E /* Image.swift */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
+		48F5771D1E8986C100AB991E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48F577171E894FB200AB991E /* PhotoTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		48F5771E1E8986D100AB991E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48F577111E894A1A00AB991E /* Photos.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		48F5771F1E8986DB00AB991E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48F576FD1E8928F600AB991E /* Albums.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		48F577201E8986E800AB991E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48F5770E1E89470100AB991E /* Profile.storyboard */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		866B9AC863009B320A2DFACA /* Pods */ = {
@@ -222,6 +299,8 @@
 			files = (
 				48F576FE1E8928F600AB991E /* Albums.storyboard in Resources */,
 				48F576DC1E87BC4A00AB991E /* LaunchScreen.storyboard in Resources */,
+				48F5770F1E89470100AB991E /* Profile.storyboard in Resources */,
+				48F577121E894A1A00AB991E /* Photos.storyboard in Resources */,
 				48F576D91E87BC4A00AB991E /* Assets.xcassets in Resources */,
 				48F576D41E87BC4A00AB991E /* Main.storyboard in Resources */,
 			);
@@ -284,13 +363,17 @@
 			files = (
 				48F577041E892C7100AB991E /* AlbumsTableViewController+Delegate.swift in Sources */,
 				48F576EA1E87CADC00AB991E /* VkApiManager.swift in Sources */,
+				48F5771C1E897C4F00AB991E /* PhotosTableViewController+Delegate.swift in Sources */,
 				48F577001E892BB000AB991E /* AlbumsTableViewController.swift in Sources */,
 				48F576F01E87DFF300AB991E /* VkSignInHandler.swift in Sources */,
 				48F576E41E87C5A500AB991E /* LoginViewController.swift in Sources */,
 				48F576CF1E87BC4A00AB991E /* AppDelegate.swift in Sources */,
 				48F576F81E89198200AB991E /* ReachabilityManager.swift in Sources */,
+				48F577181E894FB200AB991E /* PhotoTableViewCell.swift in Sources */,
 				48F5770A1E89428700AB991E /* AlbumTableViewCell.swift in Sources */,
+				48F5771A1E89514100AB991E /* Image.swift in Sources */,
 				48F577021E892C6700AB991E /* AlbumsTableViewController+Datasource.swift in Sources */,
+				48F577161E894B5F00AB991E /* PhotosTableViewController+DataSource.swift in Sources */,
 				48F576F21E87E50000AB991E /* UIView+BlockUI.swift in Sources */,
 				48F576FC1E891E3D00AB991E /* UIViewController+Connection.swift in Sources */,
 				48F576F61E87E83500AB991E /* User.swift in Sources */,
@@ -298,6 +381,7 @@
 				48F576EE1E87DA2D00AB991E /* AlertsManager.swift in Sources */,
 				48F576D71E87BC4A00AB991E /* VK_API_Test_Project.xcdatamodeld in Sources */,
 				48F577061E89302C00AB991E /* Album.swift in Sources */,
+				48F577141E894B2600AB991E /* PhotosTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

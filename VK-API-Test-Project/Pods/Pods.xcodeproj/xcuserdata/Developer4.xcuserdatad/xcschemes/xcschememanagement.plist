@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Agrume.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MapleBacon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>16C93E9456229E8C5BAE64D941F53FB9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>18697777BE58FF6F431B659C4A8C1807</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>41FA54D12162DAD51D02FC58A2CD5034</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>93EF7CC8D498F9D4A3535DE444C7356A</key>
+		<key>60E045DC2CCB46AA6E402BA34DCB7144</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>709B37C87082FC138C02EA729A3F8D0C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83921AFF33126E98C973E8CC0DDEA16A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>89BA3282F8F7A9728BC2B23A6A4B5C67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC0CDFCC581591040BC0C4306321304E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
