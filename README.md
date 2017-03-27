@@ -1,6 +1,6 @@
 # VK-API-Test-Project
 
-General Task: Using VK API create image viewer.
+General Task: Using VK API create an image viewer.
 Major requirements:
 - Login Screen
 - Albums screen(just a list with an album cover)
