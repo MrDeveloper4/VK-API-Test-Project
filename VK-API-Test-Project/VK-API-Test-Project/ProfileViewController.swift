@@ -7,20 +7,46 @@
 //
 
 import UIKit
+import SDWebImage
+import SwiftyVK
 
 class ProfileViewController: UIViewController {
 	@IBOutlet weak var userAvatarImageView: UIImageView!
 	@IBOutlet weak var usernameLabel: UILabel!
 
+	fileprivate let vkApiManager        = VkApiManager()
+	fileprivate var alertsManager       = AlertsManager()
+	fileprivate let reachabilityManager = ReachabilityManager()
+	
+	var userId: String!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		fillData()
     }
-
-	@IBAction func logoutButtonAction(_ sender: Any) {
+	
+	fileprivate func fillData() {
+		vkApiManager.userInfo { [weak self] user, errorMessage in
+			guard let `self` = self else { return }
+			guard errorMessage == nil else {
+				self.alertsManager.showCommonError(with: errorMessage!, in: self)
+				return
+			}
+			if let currentUser = user {
+				if let link = currentUser.avatarLink {
+					self.userAvatarImageView.sd_setImage(with: URL(string: link), placeholderImage: UIImage(named: "placeholder"))
+					self.userAvatarImageView.setShowActivityIndicator(true)
+				}
+				DispatchQueue.main.async {
+					self.usernameLabel.text = currentUser.fullName
+				}
+			}
+		}
 	}
-
+	
 	@IBAction func albumsButtonAction(_ sender: Any) {
+		if self.isConnectedToNetwork(in: self) {
+			
+		}
 	}
 }
