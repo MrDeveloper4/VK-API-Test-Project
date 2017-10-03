@@ -29,7 +29,6 @@ class AlbumsTableViewController: UITableViewController {
 			if let albums = albumsArray {
 				self.albums = albums
 			}
-			
 			self.tableView.reloadData()
 		}
     }
